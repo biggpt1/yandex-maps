@@ -2,11 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Амрита — оставьте отзыв и получите бонус!</title>
+  <title>Амрита — Оставьте отзыв и получите бонус!</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- Open Graph теги -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Амрита — Получите бонус за отзыв!">
+  <meta property="og:description" content="Оставьте короткий отзыв и получите 150 рублей на бонусную карту.">
+  <meta property="og:image" content="https://biggpt1.github.io/yandex-maps/assets/og-image.png">
+  <meta property="og:url" content="https://biggpt1.github.io/yandex-maps/">
+  <meta name="twitter:card" content="summary_large_image">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -30,28 +40,13 @@
       position: relative;
       overflow: hidden;
     }
-    .card::before {
-      content: '';
-      position: absolute;
-      top: -120px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 250px;
-      height: 250px;
-      background: radial-gradient(circle at center, #cce0ff, transparent);
-      z-index: 1;
-    }
     h2 {
       color: #2d3748;
       margin-bottom: 15px;
-      position: relative;
-      z-index: 2;
     }
     p {
       color: #4a5568;
       margin-bottom: 20px;
-      position: relative;
-      z-index: 2;
     }
     .button {
       display: inline-block;
@@ -62,31 +57,19 @@
       border-radius: 30px;
       font-weight: 700;
       transition: background-color 0.3s, transform 0.3s;
-      position: relative;
-      z-index: 2;
     }
     .button:hover {
       background-color: #407ae2;
       transform: translateY(-3px);
-    }
-    .supplement-img {
-      width: 80px;
-      position: absolute;
-      bottom: -10px;
-      right: -10px;
-      opacity: 0.1;
-      transform: rotate(-20deg);
-      z-index: 0;
     }
   </style>
 </head>
 <body>
   <div class="card">
     <h2>🏆 Спасибо за покупку в «Амрите»!</h2>
-    <p>Нам важно знать ваше мнение. Оставьте пожалуйста отзыв в Яндекс.Картах. Напишите пару слов о том, что вам особенно понравилось в нашем магазине.</p>
+    <p>Нам важно знать ваше мнение. Напишите пару слов о том, что вам особенно понравилось в нашем магазине.</p>
     <p>В знак благодарности мы начислим <strong>150 рублей</strong> на вашу бонусную карту после того, как вы отправите скриншот с отзывом на страницу «Амриты».</p>
     <a href="https://yandex.ru/maps/org/amrita/1010057612/reviews/?ll=44.673695%2C43.005520&tab=reviews&z=15" class="button" target="_blank" rel="noopener noreferrer">Оставить отзыв</a>
-    <img src="https://i.imgur.com/ymh8GZz.png" alt="Спортивное питание" class="supplement-img">
   </div>
 </body>
 </html>
